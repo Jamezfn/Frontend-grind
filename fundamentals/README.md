@@ -1,4 +1,4 @@
-# Floating Label Input – README
+# Floating Label Input
 
 ##  Overview
 
