@@ -1,6 +1,6 @@
 # Floating Label Input – README
 
-## 📌 Overview
+##  Overview
 
 This project implements a simple **floating label input field** using pure HTML and CSS.
 
@@ -15,7 +15,7 @@ No JavaScript is used – everything is handled with CSS.
 
 ---
 
-## 🚀 What This Code Does
+##  What This Code Does
 
 This mini project provides:
 
@@ -27,14 +27,14 @@ This mini project provides:
 
 ---
 
-## 🧩 Technologies Used
+##  Technologies Used
 
 * **HTML5**
 * **CSS3**
 
 ---
 
-# 🗂 File Structure
+#  File Structure
 
 ```
 index.html   → Contains the form input structure
@@ -43,7 +43,7 @@ index.css    → Contains all styling and animations
 
 ---
 
-# 📄 HTML Explanation
+#  HTML Explanation
 
 ### Main Structure
 
@@ -69,7 +69,7 @@ index.css    → Contains all styling and animations
 
 ---
 
-# 🎨 CSS Breakdown
+# CSS Breakdown
 
 ### 1. Global Reset
 
@@ -171,13 +171,13 @@ This is the core behavior:
 * When the input is focused
 * OR when it has valid text
 
-👉 The label moves up and becomes smaller
+ The label moves up and becomes smaller
 
 Creating the “floating label” effect.
 
 ---
 
-# 🧠 How It Works (User Flow)
+#  How It Works (User Flow)
 
 1. Page loads → label sits inside the input
 2. User clicks input → label animates up
@@ -188,7 +188,7 @@ All without JavaScript.
 
 ---
 
-# ✅ Features
+#  Features
 
 * Modern floating label UI
 * Clean and minimal design
@@ -198,7 +198,7 @@ All without JavaScript.
 
 ---
 
-## 📌 Conclusion
+##  Conclusion
 
 This project demonstrates how to build a modern interactive form input using only HTML and CSS.
 
