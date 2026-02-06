@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wiki-tooltip {
+    position: relative;
+    cursor: help;
+    border-bottom:  1px dotted #0645ad;
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.tooltip-box {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    background: #ffffff;
+    color: #202122;
+    font-size: 14px;
+    line-height: 1.5;
+    border: 1px solid #a2a9b1;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 8px #00000026;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tooltip-box::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #ffffff transparent transparent;
+}
+
+.wiki-tooltip:hover .tooltip-box {
+    opacity: 1;
+    visibility: visible;
+}
