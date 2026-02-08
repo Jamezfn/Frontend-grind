@@ -48,7 +48,7 @@ img/         → Folder containing poster images
 
 ---
 
-# 📄 HTML Explanation
+# HTML Explanation
 
 ### Main Structure
 
