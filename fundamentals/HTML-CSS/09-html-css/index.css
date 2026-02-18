@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    color: white;
+    background: #212121;
+    padding:  0.7em 1.7em;
+    font-size: 10px;
+    border-radius: 0.5em;
+    transition: all .3s;
+    border: 1px solid #212121;
+    box-shadow: 6px 6px 12px #000, -6px -6px 12px #1f1f1f;
+}
+
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #000, inset -4px -4px 12px #1f1f1f;
+}
