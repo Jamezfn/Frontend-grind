@@ -1,5 +1,6 @@
 import Card from "./card";
 import image from "./image.jpg"
+import "./cardExample.css"
 
 const socials = ["dribbble", "pinterest", "codepen"]
 

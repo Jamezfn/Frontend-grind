@@ -9,11 +9,11 @@ export default function Card({ name, image, role, bio, socials }) {
                 <h3>{role}</h3>
                 <p>{bio}</p>
                 <div className="socials">
-                    { socials.map((social) => {
+                    { socials.map((social) => (
                         <button key={social}>
                             <i className={`fa-brands fa-${social}`}></i>
                         </button>
-                    }) }
+                    )) }
                 </div>
             </div>
         </div>
