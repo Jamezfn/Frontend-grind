@@ -1,0 +1,15 @@
+:root {
+    --card: #272524
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+}
+
+.card img{
+    max-width: 280px;
+    /* width: 36vw;
+    height: ; */
+}
