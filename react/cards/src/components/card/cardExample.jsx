@@ -8,7 +8,7 @@ export default function CardExample(){
     return (
         <section className="page card-page">
             <Card 
-                name="Jill Scott"
+                name="Jill Amez"
                 role="UX Designer"
                 image={image}
                 bio="Transforming ideas into realities, creating interfaces that inspire
