@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logins</title>
+</head>
+<body>
+    <div class="card">
+        <ul class="card-nav">
+            <li>
+                <img src="logo.svg" alt="logo">
+                <span class="active-bar"></span>
+            </li>
+            <li>
+                <button class="signin active" type="button" onclick="selectView('signin')">
+                    <i class="ai-person-check"></i>
+                    <span>Sign In</span>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="signup" onclick="selectView('signup')">
+                    <i class="ai-person-add"></i>
+                    <span>Sign Up</span>
+                </button>
+            </li>
+        </ul>
+        <div class="card-hero">
+            <div class="card-hero-inner">
+                <div class="card-hero-content signin">
+                    <h2>Welcome Back.</h2>
+                    <h3>Please enter your credentials.</h3>
+                    <img src="signin.svg" alt="">
+                </div>
+                <div class="card-hero-content signup">
+                    <h2>Sign Up Now.</h2>
+                    <h3>Join the crowd and get started.</h3>
+                    <img src="signup.svg" />
+                </div>
+            </div>
+        </div>
+        <div class="card-form">
+            <div class="form">
+                <form id="signin" class="active">
+                    <p>Dont have an account? <a>Sign Up</a>.</p>
+                    <label for="email">Email</label>
+                    <div class="control">
+                        <input type="email" autocomplete="off" placeholder="youremail@gmail.com">
+                        <i class="ai-envelope"></i>
+                    </div>
+                    <label for="password">Password</label>
+                    <div class="control">
+                        <input type="password" placeholder="●●●●●●●●●●●●●●●" />
+                        <i class="ai-lock-on"></i>
+                    </div>
+                    <button>SIGN IN</button>
+                    <p class="footer">
+                        By clicking Sign In you agree to our terms and conditions, privacy
+                        policy and reusability rules.
+                    </p>
+                </form>
+                <form id="signup">
+                    <p>Already have an account? <a>Sign In</a>.</p>
+                    <label> Username </label>
+                    <div class="control">
+                        <input type="text" placeholder="myusername" />
+                        <i class="ai-person"></i>
+                    </div>
+                    <label> Email </label>
+                    <div class="control">
+                        <input type="email" autocomplete="off" placeholder="youremail@gmail.com">
+                        <i class="ai-envelope"></i>
+                    </div>
+                    <label> Password </label>
+                    <div class="control">
+                        <input type="password" placeholder="●●●●●●●●●●●●●●●" />
+                        <i class="ai-lock-on"></i>
+                    </div>
+                    <button>SIGN UP</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
