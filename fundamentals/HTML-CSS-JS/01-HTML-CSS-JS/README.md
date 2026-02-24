@@ -15,8 +15,6 @@ It features:
 * Smooth transitions
 * Clean glass-style card design
 
-Unlike your previous projects, this one uses **JavaScript for view switching**.
-
 ---
 
 ## What This Code Does
