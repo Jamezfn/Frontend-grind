@@ -12,6 +12,7 @@ body {
     width: 100%;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    color: #878787;
 }
 
 .card {
@@ -27,7 +28,7 @@ body {
   position: relative;
   border-radius: 24px;
   overflow: hidden;
-  font-family: "Space Grotesk";
+  font-family: "Bitcount Prop Single", system-ui;
   min-height: 200px;
 }
 
@@ -55,6 +56,18 @@ form > img {
     margin-bottom: 12px;
 }
 
+form > button[type="submit"] {
+  color: #f9f9f9;
+  font-weight: 500;
+  border: 0;
+  background: #564ec0;
+  font-size: 17px;
+}
+
+.hero, form {
+  flex: 1 1 50%;
+}
+
 h3, p {
     font-weight: 500%;
     margin: 0;
@@ -62,7 +75,7 @@ h3, p {
 
 .socials {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 8px;
 }
 
@@ -82,4 +95,91 @@ h3, p {
 
 .social-btn:first-child > img {
   height: 20px;
+}
+
+.social-btn > p {
+  color: #5c5c5c;
+}
+
+button, input {
+    font-family: inherit;
+    font-size: 16px;
+    color: inherit;
+    border-radius: 10px;
+    background: transparent;
+    height: 48px;
+    width: 100%;
+}
+
+input {
+  border: 1px solid var(--color-border);
+  padding: 0 2.5vw;
+}
+
+input::placeholder {
+  color: #444444;
+}
+
+.extra-text {
+  display: none;
+}
+
+.or {
+    /* background: red; */
+    height: 24px;
+    position: relative;
+}
+
+.or::before {
+  content: "";
+  background: var(--color-border);
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  /* z-index: 0; */
+  /* left: 0; */
+  translate: 0 -50%;
+  opacity: 0.6;
+}
+
+.or::after {
+    content: "Or";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 1;
+    background: #0f0f0f;
+    padding: 0 12px;
+    font-size: 12px;
+}
+
+@media (width >= 485px) {
+    .card {
+        width: clamp(300px, 90vw, 740px);
+    }
+
+    .socials {
+        flex-direction: column;
+    }
+
+    form {
+        padding-inline: 50px;
+    }
+
+    .extra-text {
+        display: inline;
+    }
+}
+
+@media (width >= 640px) {
+    .card {
+        flex-direction: row;
+        padding: 8px 0 8px 8px;
+    }
+
+    form {
+        padding: 30px;
+    }
 }
