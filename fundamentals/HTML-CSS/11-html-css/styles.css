@@ -1,0 +1,39 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    font-family: inherit;
+    box-sizing: inherit;
+}
+
+:root {
+    --color-menu: #2b2935;
+}
+
+body {
+    background: #e8dfff;
+    display: grid;
+    place-items: center;
+}
+
+.dropdown {
+    /* translate: 0 -40px; */
+    position: relative;
+}
+
+.dropdown > button{
+    background: #8864f0;
+    border-radius: 10px;
+    color: #ffffff;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.dropdown .menu {
+    border: 1px solid red;
+    height: 40px;
+}
