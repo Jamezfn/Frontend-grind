@@ -1,0 +1,43 @@
+html {
+    font-family: 'Poppins';
+}
+
+* {
+    font-family: inherit;
+}
+
+body{
+    background: #17132a url(bg.svg);
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.sidebar {
+    position: absolute;
+    background: rgb(0 0 0 / 12%);
+    top: 20px;
+    left: 16px;
+    bottom: 38px;
+    width: 56px;
+    z-index: 2;
+    border-radius: 14px;
+    backdrop-filter: blur(14px);
+}
+
+.inner {
+    position: absolute;
+    border: 1px solid red;
+    inset: 0;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar header {
+    background: red;
+    display: flex;
+    align-items: center;
+    height: 16px;
+}
