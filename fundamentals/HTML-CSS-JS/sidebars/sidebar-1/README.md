@@ -405,18 +405,3 @@ burger.addEventListener("click", () => {
 * Simple JavaScript toggle logic
 
 ---
-
-## Notes
-
-There is a small duplication in the HTML head:
-
-```html
-<link rel="stylesheet" href="./styles.css">
-<link rel="stylesheet" href="styles.css" />
-```
-
-Both point to the same file, so one of them can be removed.
-
----
-
-If you want, I can also turn this into a cleaner **README.md version** with a more polished GitHub style.
