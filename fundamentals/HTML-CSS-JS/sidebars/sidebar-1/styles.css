@@ -14,6 +14,14 @@ body{
     background-repeat: no-repeat;
 }
 
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(rgb(0 0 0 / 75%), rgb(0 0 0 / 0%));
+}
+
 .sidebar {
     position: absolute;
     background: rgb(0 0 0 / 12%);
@@ -24,20 +32,109 @@ body{
     z-index: 2;
     border-radius: 14px;
     backdrop-filter: blur(14px);
+    transition: width 0.45s;
+}
+
+.sidebar.open {
+    width: 190px;
 }
 
 .inner {
     position: absolute;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     inset: 0;
     width: 190px;
     display: flex;
     flex-direction: column;
 }
 
+.sidebar button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.sidebar .material-symbols-outlined {
+  font-size: 18px;
+}
+
 .sidebar header {
-    background: red;
+    /* border: 1px solid red; */
     display: flex;
     align-items: center;
-    height: 16px;
+    height: 64px;
+    padding: 0 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.sidebar-burger {
+    color: #f9f9f9;
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 64px;
+}
+
+.sidebar header img {
+    height: 15px;
+}
+
+.sidebar header img, 
+.sidebar nav button p {
+    opacity: 0;
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.sidebar nav {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 6px;
+    gap: 2px;
+}
+
+.sidebar nav button {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 44px;
+    width: 44px;
+    padding: 0 12px;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 1px;
+    color: #f9f9f9;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.sidebar nav button:last-child {
+    margin-top: auto;
+    margin-bottom: 8px;
+}
+
+.sidebar nav button:hover {
+    background: rgb(255 255 255 / 6%);
+    opacity: 1;
+}
+
+.sidebar:not(.open) nav button:hover p {
+    opacity: 1;
+    background: rgb(0 0 0 / 32%);
+    backdrop-filter: blur(10px);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    translate: 16px 0;
+}
+
+.sidebar.open :is(header img, nav button p) {
+    opacity: 1;
+}
+
+.sidebar.open nav button {
+    width: 100%;
 }
