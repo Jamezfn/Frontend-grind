@@ -1,0 +1,28 @@
+.service-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 2px;
+    padding: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 300px;
+    transition: all 0.3s ease-out;
+}
+
+.service-container:hover {
+    background-color: #174db26e;
+    transform: scale(1.1) translateZ(0);
+    transition: all 0.3s ease-out;
+}
+
+.service-head {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.service-body {
+    width: 15vw;
+    font-size: 16px;
+    color: #5c5c5c;
+}

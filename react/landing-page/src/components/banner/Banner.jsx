@@ -1,5 +1,4 @@
 import './banner.css';
-import ellipse from '../../assets/images/ellipse.png';
 import doctor from '../../assets/images/banner-doctor.png'
 
 function Banner() {
@@ -7,7 +6,7 @@ function Banner() {
         <div className='banner-container'>
             <div className="banner-content">
                 <div className="banner-heading">
-                    <h2>Everything good starts with good health</h2>
+                    <h2>Every good thing<br/>starts with good<br/>health</h2>
                 </div>
 
                 <div className="banner-sub-heading">
@@ -23,7 +22,6 @@ function Banner() {
             </div>
 
             <div className="banner-graphics">
-                <img src={ ellipse } alt="ellipse" />
                 <img src={ doctor } alt="doctor" />
             </div>
 
